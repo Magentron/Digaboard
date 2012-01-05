@@ -1,0 +1,89 @@
+body {
+	margin:0px;
+	height:100%;
+
+	overflow: auto;
+}
+
+body, html, input {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333333;
+	overflow: auto;
+}
+
+a:link { color: #000033; }
+a:visited { color: #000033; }
+
+.menu a:link { color: #99ffff; }
+.menu a:visited { color: #99ffff; }
+
+#table {
+	height:100%;
+	width:100%;
+   }
+
+#bugtable {
+	height:100%;
+	width:100%;
+   }
+
+#projectbugtable {
+	height:92%;
+	width:100%;
+   }
+   
+#quarter {
+	height:24%;
+	border:0px solid black;
+   }
+   
+#column {
+	height:100%;
+	vertical-align: top;
+   }
+   
+#poolcolumn {
+	height:100%;
+	width:10%;
+	border:0px solid black;
+	vertical-align: top;
+	padding:0px;
+   }
+
+#textarea {
+	width:100%;
+	font-size:20px;
+	font-style:italic;
+}
+   
+input.edit {
+	font-weight:bold;
+	font-size:10px;
+	width:35px;
+}
+
+input.project {
+	font-size:28px;
+	font-weight:bold;
+	width:25%;
+}
+   
+input.active {
+	background-color:green;
+	color:white;
+	font-weight:bold;
+	font-size:28px;
+}
+
+input.inactive {
+	background-color:grey;
+	color:black;
+	font-size:28px;
+}
+   
+.info {
+	font-style:italic;
+	font-size:0.9em;
+	color: #666666;
+}

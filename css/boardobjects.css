@@ -1,0 +1,413 @@
+.leftbar {
+	height:100%;
+	margin-left:-15px;
+	left:0px;
+	width:15px;
+	position: absolute;
+	background-color:#13758f;
+	z-index:25;
+}
+.leftbar .limit {
+	position:absolute;
+	top:0;
+	height:100%;
+	font-size:14px;
+	font-weight:bold;
+	margin-left:4px;
+	margin-bottom:2px;
+	color:#ffffff;
+	text-decoration:none;
+}
+.leftbar .limit:hover {
+	color:#ffff91;
+	text-decoration:none;
+}
+.menu {
+	position:absolute;
+	overflow:hidden;
+	right:0px;
+	width:28px;
+	height:100%;
+	background-color:#13758f;
+	z-index:25;
+	text-align:center;
+	color:black;
+}
+.menu .item {
+	margin-left:-4px;
+	color:black;
+	font-size:12px;
+	cursor:pointer;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.menu .item .over {
+display:none;
+}
+
+.menu .item:hover .over {
+	display:block;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	margin:150px;
+	height:100%;
+	z-index:100;
+}
+
+.menu .act {
+	margin-left:-8px;
+	height:139px;
+	cursor:pointer;
+	padding-top:0px;
+	padding-bottom:0px;
+	background:url("menu/active.png") no-repeat right top;
+}
+
+.menu .act .over {
+display:none;
+}
+
+.menu .act:hover .over {
+	display:block;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	margin:150px;
+	height:100%;
+	z-index:100;
+}
+
+.menu .inact {
+	margin-left:-8px;
+	height:139px;
+	cursor:pointer;
+	padding-top:5px;
+	padding-bottom:5px;
+	background:url("menu/inactive.png") no-repeat right top;
+}
+
+.menu .inact .over {
+display:none;
+}
+
+.menu .inact:hover .over {
+	display:block;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	margin:150px;
+	height:100%;
+	z-index:100;
+}
+
+.menu .team {
+	margin-left:-8px;
+	height:123px;
+	cursor:pointer;
+	padding-top:0px;
+	padding-bottom:0px;
+	background:url("menu/team.png") no-repeat right top;
+}
+
+.menu .team .over {
+display:none;
+}
+
+.menu .team:hover .over {
+	display:block;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	margin:150px;
+	height:100%;
+	z-index:100;
+}
+
+.menu .teamgray {
+	margin-left:-8px;
+	height:123px;
+	cursor:not-allowed;
+	padding-top:0px;
+	padding-bottom:0px;
+	background:url("menu/teamgray.png") no-repeat right top;
+}
+
+.menu .teamgray .over {
+display:none;
+}
+
+.menu .teamgray:hover .over {
+	display:block;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	margin:150px;
+	height:100%;
+	z-index:100;
+}
+
+.menu .project {
+	margin-left:-8px;
+	height:123px;
+	cursor:pointer;
+	padding-top:0px;
+	padding-bottom:0px;
+	background:url("menu/project.png") no-repeat right top;
+}
+
+.menu .project .over {
+display:none;
+}
+
+.menu .project:hover .over {
+	display:block;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	margin:150px;
+	height:100%;
+	z-index:100;
+}
+
+
+.board {
+	height:100%;
+	left: 15px;
+	right: 18px;
+	position: absolute;
+	background-color:#13758f;
+}
+.background {
+	height:100%;
+	width:100%;
+	margin:0px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	position:absolute;
+	background-color:#13758f;
+	/*overflow:hidden;*/
+}
+.grouptop {
+	position:relative;
+	width:100%;
+	height:49.5%;
+	z-index:0;
+	cursor:pointer;
+	background-color:#13758f;
+}
+.groupbottom {
+	position:relative;
+	width:100%;
+	height:49.5%;
+	z-index:0;
+	cursor:pointer;
+	background-color:#13758f;
+}
+.grouptop .title {
+	cursor:pointer;
+	height:20px;
+	margin-left:25px;
+	margin-right:25px;
+	font-size:14px;
+	color:#13758f;
+	font-weight:bold;
+	text-align:center;
+}
+.grouptop .title:hover {
+	text-decoration:underline;
+}
+
+.submodalbox { height:100%; width:100%; margin:auto; padding:0; border:2px solid #000000; background-color:#ffff91; overflow:hidden;}
+.box-content { margin:0px; padding: 0px; overflow:hidden;}
+
+.box-content p { margin:0; padding:0; overflow:hidden;}
+
+
+.selroundbox-tr { height:100%; width:100%; margin:auto; padding:0; background:url("rounded1_green.png") no-repeat right top; }
+
+.selroundbox-tl { height:100%; width:100%; margin:0; padding:0; background:url("rounded2.png") no-repeat left top; }
+
+.selroundbox-br { height:100%; width:100%; margin:0; padding:0; background:url("rounded3_green.png") no-repeat right bottom; }
+
+.selroundbox-bl { height:100%; width:100%; margin:0; padding:0; background:url("rounded4.png") no-repeat left bottom; }
+
+
+.overroundbox-tr { height:100%; width:100%; margin:auto; padding:0; background:url("rounded1_red.png") no-repeat right top; }
+
+.overroundbox-tl { height:100%; width:100%; margin:0; padding:0; background:url("rounded2.png") no-repeat left top; }
+
+.overroundbox-br { height:100%; width:100%; margin:0; padding:0; background:url("rounded3_red.png") no-repeat right bottom; }
+
+.overroundbox-bl { height:100%; width:100%; margin:0; padding:0; background:url("rounded4.png") no-repeat left bottom; }
+
+/* THIS CHANGES THE BACKGROUND ON MOUSE HOVER, BUT THERE IS A BUG IN IE THAT NEEDS TO BE FIXED THE IMAGE ISNT CHANGED AND CREATES A FLICKER ON EACH HOVER
+.roundbox-tr:hover { background:url("rounded1_hover.png") no-repeat right top; }
+
+.roundbox-tl:hover { background:url("rounded2_hover.png") no-repeat left top; }
+
+.roundbox-br:hover { background:url("rounded3_hover.png") no-repeat right bottom; }
+
+.roundbox-bl:hover { background:url("rounded4_hover.png") no-repeat left bottom; }
+*/
+
+.roundbox-tr { height:100%; width:100%; margin:auto; padding:0; background:url("rounded1.png") no-repeat right top; }
+
+.roundbox-tl { height:100%; width:100%; margin:0; padding:0; background:url("rounded2.png") no-repeat left top; }
+
+.roundbox-br { height:100%; width:100%; margin:0; padding:0; background:url("rounded3.png") no-repeat right bottom; }
+
+.roundbox-bl { height:100%; width:100%; margin:0; padding:0; background:url("rounded4.png") no-repeat left bottom; }
+
+.roundbox-content { margin:0; padding:5px; }
+
+.roundbox-content p { margin:0; padding:0; }
+
+.projecttop {
+	position:relative;
+	width:100%;
+	height:20%;
+	z-index:0;
+	cursor:not-allowed;
+	background-color:#13758f;
+}
+.projectbottom {
+	position:relative;
+	width:100%;
+	height:29%;
+	z-index:0;
+	cursor:not-allowed;
+	background-color:#13758f;
+}
+.projecttop .title {
+	cursor:pointer;
+	margin-top:-2px;
+	height:18px;
+	margin-left:25px;
+	margin-right:25px;
+	font-size:14px;
+	color:#13758f;
+	font-weight:bold;
+	text-align:center;
+	z-index:200;
+}
+.projecttop .title:hover {
+	text-decoration:underline;
+}
+.infobox {
+	position:relative;
+	z-index:100;
+	float:left;
+	border:1px solid #000; 
+	background-color:#ffff91;
+	min-width:75px;
+	max-width:300px;
+	padding:6px;
+	font-size:13px;
+	font-weight:bold;
+	color:black;
+	cursor: pointer;
+	margin: 2px;
+	margin-right:12px;
+    }
+
+.infobox a:link {
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+.infobox:hover {
+background-color:#ffff32;
+color:#333333;
+text-decoration:underline;
+}
+
+.infobox .status {
+	position:absolute;
+	z-index:20;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	border-right:1px solid #000;
+	right:-10px;
+	top:-1px;
+	bottom:-1px;
+	width:10px;
+	font-size:13px;
+	font-weight:bold;
+	color:black;
+	cursor: arrow;
+}
+
+.poolbox {
+	position:absolute;
+	height:20px;
+	bottom:0px;
+	background-color:#13758f;
+	padding-top:0px;
+	padding-bottom:0px;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	color:#ffffff;
+	cursor: pointer;
+	z-index:100;
+}
+.poolbox:hover {
+	text-decoration:underline;
+}
+
+.poolbox .more {
+	display:none;
+    }
+
+.poolbox:hover .more {
+	display:block;
+	position:absolute;
+	width:80%;
+	z-index:1000;
+	left:0;
+	right:0;
+	bottom:12px;
+	min-height:100px;
+	border-right:4px solid #000000;
+	border-left:4px solid #000000;
+	border-top:4px solid #000000;
+	border-bottom:4px solid #000000;
+	background-color:#ffff91;
+    }
+.poolbox .item {
+	padding:2px;
+	font-size:13px;
+	text-align:left;
+	font-weight:bold;
+	color:#000000;
+	background-color:#ffff91;
+	text-decoration:none;
+}
+.poolbox .item:hover {
+	text-decoration:underline;
+}
+/*ToolTip*/
+#dhtmltooltip{
+position: absolute;
+font-size: 22px;
+font-weight: bold;
+color: black;
+width: 300px;
+border: 4px solid black;
+padding: 2px;
+background-color: #ffffff;
+visibility: hidden;
+z-index: 1000;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}

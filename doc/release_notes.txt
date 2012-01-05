@@ -1,0 +1,26 @@
+-- Release Notes RC1 beta build 1001 --
+-- 09/19/2009 --
+
+Bug Fixes:
+IE7 compatibility
+	board - while adding the GPL copyright notice to the code it broke because IE7 expects the doctype delcaration to be on the first line
+	popup dialogs - there were some css bugs within IE7 that caused the formating to be skewed
+
+
+-- Next release build 1002 --
+After adding new task the task link displayed in message area needs to be larger
+Add task description to the project dialog under the items tab
+Next and previous buttons in the task dialog box
+Search return link after task click thru
+Additional search options
+Recode the pool items menu
+Common includes directory to keep code consistancy
+Error message consistancy
+Board hovers recode
+Links support in comments
+board menu recode - tabbed board controls (project/team, active/inactive) and added top breadcrumb menu with dialog buttons
+Team dialog box tab for deleted items - will give the ability to "undelete"
+Bug fix - if team name is longer than 9 characters text is over layed in the task dialog box
+Bug fix - check for valid user and group cookies if using multiple boards under different domains
+Bug fix - do not allow deletion of the user currently logged in
+Bug fix - team dialog tab cookies do not funcation properly

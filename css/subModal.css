@@ -1,0 +1,93 @@
+/**
+ * POPUP CONTAINER STYLES
+ */
+#popupMask {
+	position: absolute;
+	z-index: 200;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	filter: alpha(opacity=30);
+	
+	/* this hack is so it works in IE
+	 * I find setting the color in the css gives me more flexibility 
+	 * than the PNG solution.
+	 */
+	/*background-color:transparent !important;
+	background-color: #333333;*/
+	/* this hack is for opera support
+	 * you can uncomment the background-image if you don't care about opera.
+	 * this gives you the flexibility to use any bg color that you want, instead of the png
+	 */
+	background-image: url("maskBG.png") !important; // For browsers Moz, Opera, etc.
+	background-image:none;
+	background-repeat: repeat;
+	display:none;
+	cursor:not-allowed;
+}
+#popupContainer {
+	position: absolute;
+	z-index: 201;
+	top: 0px;
+	left: 0px;
+	display:none;
+	padding: 0px;
+}
+#popupInner {
+	margin-top:-20px;
+}
+
+#popupFrame {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 202;
+}
+#popupTitleBar {
+	height: 0px;
+	padding: 0px;
+	position: relative;
+	z-index: 203;
+}
+
+#submodalbox { height:500px; width:1000px; margin:auto; padding:0; border:2px solid #000000; background-color:#ffff91; }
+/*
+#roundbox-tl { height:100%; width:100%; margin:0; padding:0; border-bottom:2px solid #000000; }
+
+#roundbox-br { height:100%; width:100%; margin:0; padding:0; border-left:2px solid #000000; }
+
+#roundbox-bl { height:100%; width:100%; margin:0; padding:0; border-right:2px solid #000000; }*/
+
+#box-content { margin:0px; padding: 0px; }
+
+#box-content p { margin:0; padding:0; }
+
+/*
+#roundbox-tr { height:525px; width:1000px; margin:auto; padding:0; background:url("rounded1sub.png") no-repeat right top; }
+
+#roundbox-tl { height:100%; width:100%; margin:0; padding:0; background:url("rounded2sub.png") no-repeat left top; }
+
+#roundbox-br { height:100%; width:100%; margin:0; padding:0; background:url("rounded3sub.png") no-repeat right bottom; }
+
+#roundbox-bl { height:100%; width:100%; margin:0; padding:0; background:url("rounded4sub.png") no-repeat left bottom; }
+
+#roundbox-content { margin:0px; padding-left:6px; padding-right:8px; padding-top:6px; padding-bottom:10px;}
+
+#roundbox-content p { margin:0; padding:0; }
+*/
+
+/*
+#popupTitle {
+	float:left;
+	font-size: 1.1em;
+}
+#popupControls {
+	top:0px;
+	right:0px;
+	position:absolute;
+	cursor: pointer;
+	cursor: hand;
+}*/

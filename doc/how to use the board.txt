@@ -1,0 +1,85 @@
+﻿9/13/2009
+
+After the database schema is loaded and the code is copied into your web directory fire up your browser and open the URL
+to that webserver (Refer to the “how to install the board” document). In my case I have installed it on the top level on
+my localhost, so http://localhost will work in this situation.
+
+First walk through:
+-Now, Digaboard should load and display the “Who are you?” dialog... this is just prompting you to identify yourself.
+ There is a default user called “Your Name”. Select this to continue using the board.
+
+-After selecting “Your Name” you will be looking at the team board. The team board is a visual display of the configured
+ teams and active or inactive projects. You cannot move to the project board until you select a team. So, select one now
+ by clicking any where in the “My Team” active box.
+
+-Now that you have selected a team you can continue to the project board by clicking the Team icon on the top right menu.
+ (Team is displayed because this is the board you are looking at, if clicked you will be taken to the project board and
+ the icon will say Project to indicate that you are looking at the project board.)
+
+-There a single task on the project board called “Cool task on the board”. You can hover over it to see enlarged text and
+ more information. You can also click on the task for the full dialog box that allows you to change status, set as a blocker,
+ add/view comments, assign users, and edit the task details. Close out of this by clicking on the task title (or the close
+ button in the upper right corner) and you will be returned back to the project board.
+
+-What are those numbers above the status labels on the left (Ready, Doing, Review)? These are the queue limits. If too many
+ tasks are put into that status. ex: if Ready has 4 as its limit... 5 tasks put into Ready will trigger red visual indicators
+ to be shown on the project board and when opening the tasks full dialog box. You can configure these numbers by click on them
+ to load the board options dialog box which is also accessible from the right menu bar with the wrench icon.
+
+How do I get my team, users, projects, and tasks setup?
+Start by creating your own team:
+ 1.Click the Add (+) icon on the right menu bar.
+ 2.Click on the team tab
+ 3.Enter your teams name
+ 4.Create queue limits if you want them
+	Leave at 0 for unlimited or disabled queue limits
+ 5.Set board visuals
+	When tasks sit on the board for too long they will automatically be flagged with a visual indicator.
+	Ex: If Ready is set to 5 days and a task is sitting in the Ready status for over 5 days it will be flagged
+	with a red indicator.  Tasks in Ready status under the configured 5 days will be flagged with a green indicator.
+	And recently moved tasks within 24 hours will be flagged with a blue indicator.
+ 6.Click “Add”
+
+
+Then, create a new user for the newly created team:
+ 1.You should still be in the “Add new...” dialog
+ 2.Click on the Members tab
+ 3.Enter your name and email
+ 4.Select your team from the drop down list
+ 5.Click “Add”
+ 6.Close the “Add New...” dialog box (by clicking on the Add new title or the close in upper right)
+
+Remove the default Task, Project, User, and Team
+ 1.While on the Project board open the “Cool task on board” task
+ 2.Click the Edit tab and click the “Delete” button
+ 3.You will get a “Item removed” confirmation, click close to return to the project board
+ 4.Click the “My First Project” project title link at the top of the Project board
+ 5.The project dialog box will open
+ 6.Click the Edit tab and click the “Delete” button
+ 7.You will get another “Item removed” confirmation, click close to return to the project board
+ 8.The Project board will give you notification that there are no active projects
+ 9.Return to the team board by clicking the “Project” icon on the top right menu
+ 10.Click the “My Team” team title link at the top of the Team board
+ 11.Under the “Members” tab click on the Delete button for the “Your Name” user
+ 12.Click the Edit tab and click the “Delete” button
+ 13.You will get a “Team removed” confirmation, click close to return to the team board
+ 14.Log-out of the “Your Name” user by clicking the Key icon on the bottom right of the menu bar
+ 15.Select your new user that you previously created from the “Who are you?” dialog box
+ 16.Select your new team from the Team board
+
+Create a new project and tasks for your new team
+ 1.Assuming you have completed 14, 15, 16 from above. Click the Add (+) icon on the right menu bar.
+ 2.Click the Project tab on the “Add new...” dialog box that opened
+ 3.Name your project and give it a clear description
+ 4.Click “Add”
+ 5.Click the Item tab on the “Add new...” dialog box
+ 6.Your new project should show up in the “Add item into” drop down
+ 7.Name your task and give it a clear description
+	 1.Note: By default items will go into the Pool status. This is the hover item at the bottom of theProject column called “Pool Items”
+ 8.Click “Add”
+ 9.Repeat these steps for more Items and/or Projects
+
+That should be it. You are now ready to add all of your projects and tasks. Sorry for the lengthy steps in removing and setting
+up your new team. There are plans to make this easier with a “first run” wizard that will ask you all of this and build your
+board without so many steps.
+

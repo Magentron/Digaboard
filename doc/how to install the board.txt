@@ -1,0 +1,44 @@
+﻿9/13/2009
+
+Development environment (installed with apt-get):
+	Ubuntu 8.04 (hardy)
+	Apache/2.2.8
+	PHP/5.2.4
+	MySQL/5.0.51a
+	phpMyAdmin – needed for mysql database import
+
+Basic Manual install: 
+-Setup L/WAMP (Linux/Windows, Apache, MySQL, PHP)
+	Linux: http://www.howtoforge.com/ubuntu_debian_lamp_server 
+	Windows: http://sourceforge.net/projects/apache2triad/files/ 
+
+Load Digaboard database scheme 
+-Open phpmyadmin (http://localhost/phpmyadmin) 
+-Login with the root password created during L/WAMP setup 
+-Create database 
+-Import 
+-Browse for the digaboard-schema-<version>.sql file included in the Digaboard package 
+-Submit to complete the database import
+-Create a mysql user that has Select, Insert, Update, Delete privileges to the database
+-Create password for mysql user
+
+Copy over source code to web directory (do not include the “www” folder, just its contents)
+-Linux: 
+	/var/www/ 
+-Windows(Apache2Triad): 
+	C:\apache2triad\htdocs 
+
+Edit mysql.php and enter your database connection information:
+	$dbuser/$dbpass - this is the mysql username and password created in the above step
+	$dbname - this is the name of the database created in the above step
+
+Refer to the “how to use the board” document for a quick walk through of using and setting up the board (this is included with the Digaboard source package).
+
+*Notes: 
+This basic install is the minimal that is need to get Digaboard source 
+code up and running on a server. To run Digaboard in production we 
+recommend having an experienced Linux or Windows guru do the LAMP or 
+WAMP setup. 
+
+We do have plans to release a hardened linux virtual appliance 
+pre-configured with LAMP and Digaboard. .. but we aren't quite there yet.

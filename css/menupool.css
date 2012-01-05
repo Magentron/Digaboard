@@ -1,0 +1,75 @@
+.suckerdiv ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+width: 127px; /* Width of Menu Items */
+border-bottom: 0px solid #000000;
+}
+	
+.suckerdiv ul li{
+position: relative;
+}
+	
+/*Sub level menu items */
+.suckerdiv ul li ul{
+position: absolute;
+width: 200px; /*sub menu width*/
+top: 0;
+visibility: hidden;
+}
+
+/* Sub level menu links style */
+.suckerdiv ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: #000033;
+text-decoration: none;
+background: #fff;
+padding: 0px 0px;
+border: 0px solid #000000;
+border-bottom: 0;
+}
+
+.suckerdiv ul li a:visited{
+background-color: #ffcc33;
+color: #000033;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+}
+
+.suckerdiv ul li a:link{
+background-color: #ffcc33;
+color: #000033;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+}
+
+.suckerdiv ul li a:hover{
+background-color: #ff9933;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+}
+	
+/* Holly Hack for IE \*/
+* html .suckerdiv ul li { float: left; height: 1%; }
+* html .suckerdiv ul li a { height: 1%; }
+/* End */
+
+/*ToolTip*/
+#dhtmltooltip{
+position: absolute;
+font-size: 17px;
+font-weight: bold;
+color: black;
+width: 300px;
+border: 2px solid black;
+padding: 2px;
+background-color: #ff9933;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
